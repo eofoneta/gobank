@@ -1,0 +1,11 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+bin = "main"  # The name of the compiled binary
+cmd = "go build -o main main.go"  # The build command to run
+exclude = ["tmp/*", "client/*"]  # Files/folders to exclude from watching
+
+include = ["**/*.go"]  # Files to include in the watch list
+
+ignore = ["tmp/*"]  # Files to ignore for changes, often used for build output
